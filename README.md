@@ -1,15 +1,18 @@
-# mxp-style
-Style name: MXP
-Based on style: prosilver for phpBB3 by phpBB Group
-Original author: OryNider, using prosilver syle as a base. 
-This is an green colors responsive style for phpBB and MXP.
+Style name: LiteBook
+
+Based on style: prosilver for phpBB3 by phpBB Limited
+
+Original author: OryNider, some ideeas from ProLight and forumbook phpBB Styles.
+ 
+A clean style for phpBB using prosilver as parent and the colours on the popular social network Facebook.
 
 
-phpBB Version: 3.2.3 Style Version: 3.2.3 
+phpBB Version: 3.2.3 
+Style Version: 3.2.3 
 
-Screenshots: Image 
+Screenshots: capture_022_20112018_095704.png 
 
-Style Download: https://github.com/orynider/mxp-style/releases 
+Style Download: https://github.com/orynider/LiteBook/releases 
 
 License: [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0) 
 
