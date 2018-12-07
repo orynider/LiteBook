@@ -67,14 +67,14 @@
 	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
 </div>
 
-<script type="text/javascript" src="{T_JQUERY_LINK}"></script>
-<!-- IF S_ALLOW_CDN --><script type="text/javascript">window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
-<script type="text/javascript" src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
+<script src="{T_JQUERY_LINK}"></script>
+<!-- IF S_ALLOW_CDN --><script>window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
+<script src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
 
-<script type="text/javascript" src="{T_TEMPLATE_PATH}/jquery.cookie.js"></script>
+<script src="{T_TEMPLATE_PATH}/jquery.cookie.js"></script>
 
 <!-- IF S_REGISTERED_USER and S_DISPLAY_PM and S_NOTIFICATIONS_DISPLAY -->
-<script type="text/javascript" src="{T_TEMPLATE_PATH}/sidebar.js"></script>
+<script src="{T_TEMPLATE_PATH}/sidebar.js"></script>
 <!-- ENDIF -->
 <!-- IF $LB_COLLAPSIBLE_CATEGORIES -->
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/jquery.collapse.js"></script>
@@ -115,22 +115,22 @@
 	<script src="{T_ASSETS_PATH}/cookieconsent/cookieconsent.min.js?assets_version={T_ASSETS_VERSION}"></script>
 	<script>
 		if (typeof window.cookieconsent === "object") {
-		window.addEventListener("load", function(){
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-						"background": "#0F538A"
+			window.addEventListener("load", function(){
+				window.cookieconsent.initialise({
+					"palette": {
+						"popup": {
+							"background": "#0F538A"
+						},
+						"button": {
+							"background": "#E5E5E5"
+						}
 					},
-					"button": {
-						"background": "#E5E5E5"
-					}
-				},
-				"theme": "classic",
-				"content": {
-					"message": "{LA_COOKIE_CONSENT_MSG}",
-					"dismiss": "{LA_COOKIE_CONSENT_OK}",
-					"link": "{LA_COOKIE_CONSENT_INFO}",
-					"href": "{UA_PRIVACY}"
+					"theme": "classic",
+					"content": {
+						"message": "{LA_COOKIE_CONSENT_MSG}",
+						"dismiss": "{LA_COOKIE_CONSENT_OK}",
+						"link": "{LA_COOKIE_CONSENT_INFO}",
+						"href": "{UA_PRIVACY}"
 					}
 				});
 			});
