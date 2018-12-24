@@ -1,7 +1,9 @@
 <!-- INCLUDE overall_header.html -->
 
 <p class="{S_CONTENT_FLOW_END} responsive-center time<!-- IF S_USER_LOGGED_IN --> rightside<!-- ENDIF -->"><!-- IF S_USER_LOGGED_IN -->{LAST_VISIT_DATE}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --></p>
-<!-- IF S_USER_LOGGED_IN --><p class="responsive-center time">{CURRENT_TIME}</p><!-- ENDIF -->
+<!-- IF S_USER_LOGGED_IN -->
+<p class="responsive-center time">{CURRENT_TIME}</p>
+<!-- ENDIF -->
 
 <!-- EVENT index_body_markforums_before -->
 <!-- IF U_MARK_FORUMS -->
@@ -11,7 +13,9 @@
 <!-- ENDIF -->
 <!-- EVENT index_body_markforums_after -->
 
-<!-- IF $LB_LEFT_SIDEBAR_LAYOUT --><div class="bodyright"><!-- ENDIF -->
+<!-- IF $LB_LEFT_SIDEBAR_LAYOUT -->
+<div class="bodyright">
+<!-- ENDIF -->
 
 <!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
 	<form method="post" action="{S_LOGIN_ACTION}" class="headerspace panel">
@@ -30,15 +34,22 @@
 		</fieldset>
 	</form>
 <!-- ENDIF -->
+
 <!-- INCLUDE forumlist_body.html -->
 
 <!-- EVENT index_body_forumlist_body_after -->
 
-<!-- IF $LB_LEFT_SIDEBAR_LAYOUT --></div><div class="bodyleft"><!-- ENDIF -->
+<!-- IF $LB_LEFT_SIDEBAR_LAYOUT -->
+</div>
+<div class="bodyleft">
+<!-- ENDIF -->
 
 <!-- EVENT index_body_stat_blocks_before -->
 <!-- INCLUDE online_body.html -->
 <!-- EVENT index_body_stat_blocks_after -->
-<!-- IF $LB_LEFT_SIDEBAR_LAYOUT --></div><!-- ENDIF -->
+
+<!-- IF $LB_LEFT_SIDEBAR_LAYOUT -->
+</div>
+<!-- ENDIF -->
 
 <!-- INCLUDE overall_footer.html -->

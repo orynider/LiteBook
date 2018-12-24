@@ -24,10 +24,10 @@
 <!-- ENDIF -->
 
 <!--
-	phpBB style name: forumbook
+	phpBB style name: LiteBook
 	Based on style:   prosilver (this is the default phpBB3 style)
 	Original author:  Tom Beddard ( http://www.subBlue.com/ )
-	Modified by: John Olson (https://www.phpbb.com/community/viewtopic.php?f=596&t=2408981)
+	Modified by: FlorinCB aka orynider
 -->
 
 <!-- IF S_ALLOW_CDN -->
@@ -74,6 +74,7 @@
 
 </head>
 <body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} {BODY_CLASS}">
+
 <div class="headernav"><div class="headernavcontent">
 <div class="headerl">
 <a href="<!-- IF U_SITE_HOME -->{U_SITE_HOME}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->"><div class="headericon"><span class="headericontext">{SITENAME}</span></div></a>
@@ -266,12 +267,13 @@
 			<!-- EVENT overall_header_headerbar_after -->
 		</div>
 
-	<div class="page-header">
-		<div class="headerbar" role="banner">
-		<!-- EVENT overall_header_navbar_before -->
-		<!-- INCLUDE navbar_header.html -->
+	<div class="headerwrap">
+		<div class="page-header">
+			<div class="headerbar" role="banner">
+			<!-- EVENT overall_header_navbar_before -->
+			<!-- INCLUDE navbar_header.html -->
+			</div>
 		</div>
-	</div>
 	</div>
 
 	<!-- EVENT overall_header_page_body_before -->
