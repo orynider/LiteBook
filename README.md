@@ -7,8 +7,8 @@ Original author: OryNider, some ideeas from ProLight and forumbook phpBB Styles.
 A clean style for phpBB using prosilver as parent and the colours on the popular social network Facebook.
 
 
-phpBB Version: 3.2.3 
-Style Version: 3.2.3 
+phpBB Version: 3.2.5 
+Style Version: 3.2.5 
 
 Screenshots: capture_022_20112018_095704.png 
 

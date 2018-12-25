@@ -156,7 +156,7 @@ a:hover	{ text-decoration: underline; }
 	padding: 47px 15px 15px;
 }
 
-@media only screen and (max-width: 7220px), only screen and (max-device-width: 7220px) {
+@media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
 	.wrap {
 		margin: 0 12px;
 	}
@@ -474,7 +474,7 @@ ul.rightside {
 
 ul.linklist li.responsive-menu {
 	position: relative;
-	/* margin: 0 5px 0 0; */
+	margin: 0 5px 0 0;
 }
 
 .hasjs ul.linklist.leftside, .hasjs ul.linklist.rightside {
@@ -1439,8 +1439,8 @@ ul.linklist:after,
 	margin-left: 3px;
 	vertical-align: baseline;
 	position: relative;
-	top: -14px;
-	left:-15px;
+	top: 4px;
+	left:3px;
 	padding: 3px 4px;
 }
 
